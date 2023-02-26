@@ -1,0 +1,65 @@
+// project specific variables
+$theme-color--orange0: #f0542d;
+$theme-color--default: #0c95ec;
+$theme-color--default--light: darken($theme-color--default, 10%);
+$theme-color--red1: #de2021;
+$theme-color--red2: #d0021b;
+$theme-color--orange1: #f6732e;
+$theme-color--orange2: #fc844b;
+$theme-color--orange3: #ff732f;
+$theme-color--blue-dark: rgb(6, 121, 192);
+$theme-color--violet: #7f60d1;
+$theme-color--black: #222;
+$theme-color--black2: #11202d;
+$theme-color--black3: #05103b;
+$theme-color--black4: #313131;
+
+$transition--cubic: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+// Font Family
+$font-family-name: "Roboto", sans-serif;
+$heading-font-family-name: "Roboto", sans-serif;
+$poppins: "Poppins", sans-serif;
+// Colors ---------------
+
+$white: #ffffff;
+$black: #000000;
+
+// Body Text
+$body-text-color: #1d1d25;
+$body-font-weight: 400;
+$body-line-height: 1.66;
+$body-font-size: 15px;
+$body-bg-color: $white;
+
+// Heading Text
+$heading-text-color: #1d1d25;
+$heading-font-weight: 700;
+
+// Other Colors
+$primary: #004395;
+$secondary: #f9c322;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+
+// Social Color
+$facebook: #4867aa;
+$google-plus: #dd5144;
+$instagram: #b23a94;
+$linkedin: #007bb6;
+$pinterest: #bd081b;
+$twitter: #1da1f2;
+$skype: #00a9f0;
+$tumblr: #36465d;
+
+// Responsive Variables
+$xlmax-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
+$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1499px)";
+$desktop-device: "only screen and (min-width: 992px) and (max-width: 1199px)";
+$tablet-device: "only screen and (min-width: 768px) and (max-width: 991px)";
+$large-mobile: "only screen and (max-width: 767px)";
+$small-mobile: "only screen and (max-width: 575px)";
+$extra-small-mobile: "only screen and (max-width: 479px)";

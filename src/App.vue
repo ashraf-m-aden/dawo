@@ -1,11 +1,42 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="container-fluid" id="app">
+    <v-app>
+      <router-view />
+
+      <!-- back to top start -->
+
+      <v-btn
+        @click="scrollToTop"
+        :class="{ show: isVisible }"
+        icon="mdi-arrow-up-thick"
+        color="info"></v-btn>
+      <!-- back to top end -->
+    </v-app>
+  </div>
 </template>
 
+<script setup lang="ts">
+import { onMounted } from "vue";
+
+let isVisible = false;
+
+const scrollToTop = () => {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    let scroll = window.scrollY;
+    if (scroll >= 500) {
+      isVisible = true;
+    } else {
+      isVisible = false;
+    }
+  });
+});
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
